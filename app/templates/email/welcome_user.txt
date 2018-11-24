@@ -1,0 +1,6 @@
+Hello {{user.username}}.
+We are glad that you have signed up.
+Welcome to our team, thank you.
+
+Regards;
+The Blogger
