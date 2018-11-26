@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block styles %}
+  {{ super() }}
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link rel="icon" href="{{url_for('static',filename='favicon/img.png')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css') }}">
+{% endblock %}
+{%block content %}
+<h1 class='text-center'>{{message}}</h1> <hr>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col1 col-md-8">
+      <h2>Latest Blogs</h2>
+      <div class="row">
+        {% for blog in blogs %}
+        <div class="col-sm-6">
+          <ul class='list-unstyled '>
+            <li class='style'>
+              <h3 class=text-primary>{{blog.title}}</h3>
+              <h4>{{blog.description}}</h4>
+              <!-- <p>By: {{blog.user.username}}</p> -->
+              
+              <a href="{{url_for('main.comments',uname = current_user.username)}}"><button class='btn btn-primary'>Comment</button></a>
+              <button class='btn btn-primary' type="submit">Update</button>
+              <button class='btn btn-danger mr-10' type="reset">Delete</button>
+            </li> <hr> <br>
+            </ul>
+        </div>
+        {% endfor %}
+        {{comments.user_id}}
+      </div>
+    </div>
+    <div class="col col-md-4">
+      {{wtf.quick_form(blog_form)}}
+    </div>
+  </div>
+  <h2><marquee class='text-primary' behavior="alternate" direction="left">For all your timely blogs.</marquee></h2>
+</div>
+
+
+{% endblock %}
