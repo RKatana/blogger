@@ -31,7 +31,7 @@ This is an app for writing blogs
 
 Please run the following command on your terminal on linux to clone our project:
 
-git clone [pitch](https://github.com/RKatana/blogger.git)
+git clone [blogger](https://github.com/RKatana/blogger.git)
 After the operation you will now be able to run the application locally on your computer.
 
 ------------------------------------------------------------------------
@@ -51,7 +51,7 @@ After the operation you will now be able to run the application locally on your 
 
 ## Contributing
 
-+ Git clone [pitch](https://github.com/RKatana/blogger.git)
++ Git clone [blogger](https://github.com/RKatana/blogger.git)
 + Make the necessary changes
 + Run the tests.
 + If everything is OK. Push your changes and make a pull request.
@@ -60,7 +60,7 @@ After the operation you will now be able to run the application locally on your 
 
 ### Link to view the app (heroku)
 
-[pitch](https://blogkatana.herokuapp.com/)
+[blogger](https://blogkatana.herokuapp.com/)
 
 ------------------------------------------------------------------------
 
