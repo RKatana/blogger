@@ -60,7 +60,7 @@ After the operation you will now be able to run the application locally on your 
 
 ### Link to view the app (heroku)
 
-[blogger](https://blogkatana.herokuapp.com/)
+[blogger](https://katanablog.herokuapp.com/)
 
 ------------------------------------------------------------------------
 
